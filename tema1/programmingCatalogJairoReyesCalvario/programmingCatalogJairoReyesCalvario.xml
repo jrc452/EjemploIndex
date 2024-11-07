@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='styles.css'?>
+<catalog>
+	<book>
+		<title>Clean Code</title>
+		<author>Robert C. Martin</author>
+		<year>2008</year>
+		<publisher>Prentice Hall</publisher>
+	</book>
+	<book>
+		<title>Trono de Cristal</title>
+		<author>Sarah J. Maas</author>
+		<year>2024</year>
+		<publisher>Editorial Hidra</publisher>
+	</book>
+	<book>
+		<title>Cuentos de Canterbury</title>
+		<author>Geoggrey Chaucer</author>
+		<year>2006</year>
+		<publisher>Ediciones Cátedra</publisher>
+	</book>
+	<book>
+		<title>Don Quijote de la Mancha</title>
+		<author>Miguel de Cervantes</author>
+		<year>2015</year>
+		<publisher>Ediciones Destino</publisher>
+	</book>
+</catalog>

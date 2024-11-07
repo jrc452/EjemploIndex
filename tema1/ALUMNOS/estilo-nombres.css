@@ -1,0 +1,45 @@
+estructura {
+	background-color: #f0f0f0;
+	font-family: sans-serif;
+	display: table;
+}
+
+alumno {
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	padding: 5px;
+	display: block;
+}
+
+nombre, apellidos {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+nif {
+	color: blue;
+}
+
+telefono {
+	color: green;
+}
+
+email {
+	color: indigo;
+}
+
+direccion {
+	color: black;
+}
+
+faltas-de-asistencias {
+	color: red;
+}
+
+notas {
+	color: orangered;
+}
+
+nif, telefono, email, direccion, faltas-de-asistencias, notas {
+	display: table-row-group;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tablas</title>
+        <style>
+            table {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: normal;
+                font-size: large;
+                border-color: rgb(245, 170, 71);
+            }
+
+            html {
+                margin-top: 11%;
+                margin-bottom: 11%;
+            }
+
+            .titulo {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 1ch;
+                font-weight: bolder;
+                background-color: blanchedalmond;
+            }
+
+            .biblioteca {
+                background-color: black;
+                color: white;
+                font-weight: lighter;
+            }
+
+            .recreo {
+                background-color: rgb(196, 72, 0);
+                color: white;
+                letter-spacing: 2ch;
+                font-weight: lighter;
+            }
+
+            .horario {
+                background-color: orangered;
+            }
+
+            .dias {
+                background-color: orange;
+                letter-spacing: 0.3ch;
+            }
+
+            .horas {
+                background-color: rgb(255, 193, 77);
+                font-size: large;
+                font-weight: normal;
+            }
+
+            .asignaturas {
+                background-color: rgb(255, 242, 205);
+                font-size: small;
+                font-weight: bold;
+            }
+        </style>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+            <table border="1" cellspacing="0" cellpadding="4" width="900">
+                <tr class="titulo"><td colspan="7">
+                    MI HORARIO DE CLASE
+                </td></tr>
+                <tr class="dias">
+                    <th class="horario" width="150">HORARIO</th>
+                    <td align="center">LUNES</td>
+                    <td align="center">MARTES</td>
+                    <td align="center">MIÉRCOLES</td>
+                    <td align="center">JUEVES</td>
+                    <td align="center">VIERNES</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">08:30 - 09:30</td>
+                    <td>Entornos de desarrollo</td>
+                    <td>Inglés</td>
+                    <td>Lenguajes de marcas y sistemas de gestión de información</td>
+                    <td>Sistemas informáticos</td>
+                    <td>Sostenibilidad Aplicada al Sistema Productivo</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">09:30 - 10:30</td>
+                    <td rowspan="2">Programación</td>
+                    <td>Digitalización Aplicada a los Sectores Productivos</td>
+                    <td colspan="2">Entornos de desarrollo</td>
+                    <td class="biblioteca">BIBLIOTECA</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">10:30 - 11:30</td>
+                    <td class="biblioteca">BIBLIOTECA</td>
+                    <td>Sistemas informáticos</td>
+                    <td colspan="2">Programación</td>
+                </tr>
+                <tr>
+                    <td class="horas">11:30 - 12:00</td>
+                    <td class="recreo" colspan="7">RECREO</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">12:00 - 13:00</td>
+                    <td rowspan="2" colspan="2">Bases de Datos</td>
+                    <td>Sistemas informáticos</td>
+                    <td colspan="2">Programación</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">13:00 - 14:00</td>
+                    <td rowspan="2">Bases de Datos</td>
+                    <td class="biblioteca">BIBLIOTECA</td>
+                    <td rowspan="2">Sistemas informáticos</td>
+                </tr>
+                <tr class="asignaturas">
+                    <td class="horas">14:00 - 15:00</td>
+                    <td>Inglés</td>
+                    <td>Lenguajes de marcas y sistemas de gestión de información</td>
+                    <td>Lenguajes de marcas y sistemas de gestión de información</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
