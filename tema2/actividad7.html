@@ -3,18 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <title>Probando formularios</title>
+        <style>
+            html {
+                padding-top: 80mm;
+                padding-bottom: 80mm;
+            }
+            body {
+                background-color: rgb(121, 150, 184);
+                background-image: linear-gradient(180deg, rgb(0, 35, 131) 0%, rgb(121, 150, 184) 100%);
+                background-repeat: no-repeat;
+            }
+            table {
+                box-shadow: 0px 0px 50px rgb(30, 128, 167);
+                background-image: repeating-linear-gradient(0deg, rgb(82, 180, 209) 0%, rgb(123, 201, 201) 1%, rgb(82, 180, 209) 2%);
+                border-style:solid;
+                border-radius: 5%;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                color: rgb(50, 40, 190);
+                font-weight: bold;
+                text-shadow: 0px 0px 25px rgba(50, 40, 190, 0.5);
+            }
+            td {
+                border-style: none;
+            }
+            input {
+                text-align: left;
+                background-color: rgba(0,0,0,0);
+                border-style: dotted;
+                color: rgb(50, 40, 190);
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                text-shadow: 0px 0px 20px rgba(50, 40, 190, 0.5);;
+            }
+            h1 {
+                font-variant: small-caps;
+                font-weight: bolder;
+                text-justify: auto;
+            }
+        </style>
     </head>
     <body>
-        <table align="center" border="2" cellpadding="18">
+        <table align="center" border="0" cellpadding="18">
             <tr><td><form action="">
+                <h1>prueba de formularios</h1>
                 <p>
-                    Nombre: <input type="text" name="nombre" size="25" maxlength="40"><br>
-                    Primer apellido: <input type="text" name="apellido1" size="23" maxlength="40"><br>
-                    Segundo apellido: <input type="text" name="apellido2" size="20" maxlength="40"><br>
-                    Dirección: <input type="text" name="direccion" size="10" maxlength="30"><br>
-                    Teléfono: <input type="text" name="telefono" size="10" maxlength="10"><br>
-                    Edad: <input type="text" name="edad" size="3" maxlength="3"><br>
-                    Población: <input type="text" name="poblacion" size="20" maxlength="30">
+                    Nombre: <input type="text" name="nombre" size="29" maxlength="40"><br>
+                    Primer apellido: <input type="text" name="apellido1" size="17" maxlength="40"><br>
+                    Segundo apellido: <input type="text" name="apellido2" size="16" maxlength="40"><br>
+                    Dirección: <input type="text" name="direccion" size="25" maxlength="30"><br>
+                    Teléfono: <input type="text" name="telefono" size="26" maxlength="9"><br>
+                    Edad: <input type="text" name="edad" size="31" maxlength="3"><br>
+                    Población: <input type="text" name="poblacion" size="24" maxlength="30"><br>
+                </p>
+                <h1>selecciona el tipo de música</h1>
+                <p>
+                    <input type="radio" name="musica" value="jazz">Jazz
+                    <input type="radio" name="musica" value="pop">Pop
+                    <input type="radio" name="musica" value="rock">Rock
+                    <input type="radio" name="musica" value="country">Country
+                </p>
+                <h1>selecciona el tipo de cine</h1>
+                <p>
+                    <input type="radio" name="cine" value="accion">Acción
+                    <input type="radio" name="cine" value="comedia">Comedia
+                    <input type="radio" name="cine" value="cienciaficcion">Ciencia-ficción
+                    <input type="radio" name="cine" value="drama">Drama
+                    <input type="radio" name="cine" value="terror">Terror
                 </p>
             </form></td></tr>
         </table>
