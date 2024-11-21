@@ -36,6 +36,12 @@
                 font-family: 'Courier New', Courier, monospace;
                 text-shadow: 0px 0px 20px rgba(50, 40, 190, 0.5);;
             }
+            .button {
+                text-align: center;
+                border-style: none;
+                border-color: rgb(50, 40, 190);
+                background-color:azure;
+            }
             h1 {
                 font-variant: small-caps;
                 font-weight: bolder;
@@ -51,26 +57,32 @@
                     Nombre: <input type="text" name="nombre" size="29" maxlength="40"><br>
                     Primer apellido: <input type="text" name="apellido1" size="17" maxlength="40"><br>
                     Segundo apellido: <input type="text" name="apellido2" size="16" maxlength="40"><br>
-                    Sexo: <input type="radio" name="sexo" value="masculino">Masculino <input type="radio" name="sexo" value="femenino">Femenino<br>
+                    Sexo: <input type="radio" name="sexo" value="masculino">Masculino
+                    <input type="radio" name="sexo" value="femenino">Femenino
+                    <input type="radio" name="sexo" value="desconocido">Desconocido<br>
                     Dirección: <input type="text" name="direccion" size="25" maxlength="30"><br>
                     Teléfono: <input type="text" name="telefono" size="26" maxlength="9"><br>
                     Edad: <input type="text" name="edad" size="31" maxlength="3"><br>
                     Población: <input type="text" name="poblacion" size="24" maxlength="30"><br>
                 </p>
-                <h1>selecciona el tipo de música</h1>
+                <h1>¿cual es tu tipo de música preferido?</h1>
                 <p>
                     <input type="radio" name="musica" value="jazz">Jazz
                     <input type="radio" name="musica" value="pop">Pop
                     <input type="radio" name="musica" value="rock">Rock
                     <input type="radio" name="musica" value="country">Country
                 </p>
-                <h1>selecciona el tipo de cine</h1>
+                <h1>¿cual es tu tipo de cine preferido?</h1>
                 <p>
                     <input type="radio" name="cine" value="accion">Acción
                     <input type="radio" name="cine" value="comedia">Comedia
                     <input type="radio" name="cine" value="cienciaficcion">Ciencia-ficción
                     <input type="radio" name="cine" value="drama">Drama
                     <input type="radio" name="cine" value="terror">Terror
+                </p>
+                <p>
+                    <input class="button" type="reset" name="borrar" value="Limpiar datos">
+                    <input class="button" type="reset" name="borrar" value="Siguiente formulation">
                 </p>
             </form></td></tr>
         </table>
