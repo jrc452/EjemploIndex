@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Probando formularios</title>
+        <title>Probando formularios (B)</title>
         <style>
             html {
                 padding-top: 80mm;
@@ -47,43 +47,32 @@
                 font-weight: bolder;
                 text-justify: auto;
             }
+            hr {
+                border-style: solid;
+                border-color: black;
+            }
         </style>
     </head>
     <body>
         <table align="center" border="0" cellpadding="18">
             <tr><td><form action="">
-                <h1>prueba de formularios</h1>
+                <h1>prueba de formularios (b): cajas de selección</h1>
+                <hr>
+                <h1>selecciona las aficiones que quieras</h1>
                 <p>
-                    Nombre: <input type="text" name="nombre" size="40" maxlength="40"><br>
-                    Primer apellido: <input type="text" name="apellido1" size="29" maxlength="40"><br>
-                    Segundo apellido: <input type="text" name="apellido2" size="28" maxlength="40"><br>
-                    Sexo: <input type="radio" name="sexo" value="masculino">Masculino
-                    <input type="radio" name="sexo" value="femenino">Femenino
-                    <input type="radio" name="sexo" value="desconocido">Desconocido<br>
-                    Dirección: <input type="text" name="direccion" size="36" maxlength="30"><br>
-                    Teléfono: <input type="text" name="telefono" size="37" maxlength="9"><br>
-                    Edad: <input type="text" name="edad" size="41" maxlength="3"><br>
-                    Población: <input type="text" name="poblacion" size="35" maxlength="30"><br>
+                    <input type="checkbox" name="tennis">Practicar tenís
                 </p>
-                <h1>¿cual es tu tipo de música preferido?</h1>
                 <p>
-                    <input type="radio" name="musica" value="jazz">Jazz
-                    <input type="radio" name="musica" value="pop">Pop
-                    <input type="radio" name="musica" value="rock">Rock
-                    <input type="radio" name="musica" value="country">Country
+                    <input type="checkbox" name="football">Practicar fútbol
                 </p>
-                <h1>¿cual es tu tipo de cine preferido?</h1>
                 <p>
-                    <input type="radio" name="cine" value="accion">Acción
-                    <input type="radio" name="cine" value="comedia">Comedia
-                    <input type="radio" name="cine" value="cienciaficcion">Ciencia-ficción
-                    <input type="radio" name="cine" value="drama">Drama
-                    <input type="radio" name="cine" value="terror">Terror
+                    <input type="checkbox" name="b-ball">Jugar al balóncesto
                 </p>
             <hr>
                 <p>
                     <input class="button" type="reset" name="borrar" value="Limpiar datos">
-                    <input class="button" type="reset" name="borrar" value="Siguiente formulario">                </p>
+                    <input class="button" type="button" value="Formulario anterior" onclick="window.location.replace('actividad7a.html');">
+                    <input class="button" type="submit" value="Submitir">
                     <input class="button" type="button" value="Salir" onclick="window.location.replace('..');">
                 </p>
             </form></td></tr>

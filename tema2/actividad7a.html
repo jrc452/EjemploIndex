@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Probando formularios (A)</title>
+        <style>
+            html {
+                padding-top: 80mm;
+                padding-bottom: 80mm;
+            }
+            body {
+                background-color: rgb(121, 150, 184);
+                background-image: linear-gradient(180deg, rgb(0, 35, 131) 0%, rgb(121, 150, 184) 100%);
+                background-repeat: no-repeat;
+            }
+            table {
+                box-shadow: 0px 0px 50px rgb(30, 128, 167);
+                background-image: repeating-linear-gradient(0deg, rgb(82, 180, 209) 0%, rgb(123, 201, 201) 1%, rgb(82, 180, 209) 2%);
+                border-style:solid;
+                border-radius: 5%;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                color: rgb(50, 40, 190);
+                font-weight: bold;
+                text-shadow: 0px 0px 25px rgba(50, 40, 190, 0.5);
+            }
+            td {
+                border-style: none;
+            }
+            input {
+                text-align: left;
+                background-color: rgba(0,0,0,0);
+                border-style: dotted;
+                color: rgb(50, 40, 190);
+                font-weight: bold;
+                font-family: 'Courier New', Courier, monospace;
+                text-shadow: 0px 0px 20px rgba(50, 40, 190, 0.5);;
+            }
+            .button {
+                text-align: center;
+                border-style: none;
+                border-color: rgb(50, 40, 190);
+                background-color:azure;
+            }
+            h1 {
+                font-variant: small-caps;
+                font-weight: bolder;
+                text-justify: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center" border="0" cellpadding="18">
+            <tr><td><form action="">
+                <h1>prueba de formularios (a)</h1>
+                <hr>
+                <p>
+                    Nombre: <input type="text" name="nombre" size="40" maxlength="40"><br>
+                    Primer apellido: <input type="text" name="apellido1" size="29" maxlength="40"><br>
+                    Segundo apellido: <input type="text" name="apellido2" size="28" maxlength="40"><br>
+                    Sexo: <input type="radio" name="sexo" value="masculino">Masculino
+                    <input type="radio" name="sexo" value="femenino">Femenino
+                    <input type="radio" name="sexo" value="desconocido">Desconocido<br>
+                    Dirección: <input type="text" name="direccion" size="36" maxlength="30"><br>
+                    Teléfono: <input type="text" name="telefono" size="37" maxlength="9"><br>
+                    Edad: <input type="text" name="edad" size="41" maxlength="3"><br>
+                    Población: <input type="text" name="poblacion" size="35" maxlength="30"><br>
+                </p>
+                <h1>¿cual es tu tipo de música preferido?</h1>
+                <p>
+                    <input type="radio" name="musica" value="jazz">Jazz
+                    <input type="radio" name="musica" value="pop">Pop
+                    <input type="radio" name="musica" value="rock">Rock
+                    <input type="radio" name="musica" value="country">Country
+                </p>
+                <h1>¿cual es tu tipo de cine preferido?</h1>
+                <p>
+                    <input type="radio" name="cine" value="accion">Acción
+                    <input type="radio" name="cine" value="comedia">Comedia
+                    <input type="radio" name="cine" value="cienciaficcion">Ciencia-ficción
+                    <input type="radio" name="cine" value="drama">Drama
+                    <input type="radio" name="cine" value="terror">Terror
+                </p>
+            <hr>
+                <p>
+                    <input class="button" type="reset" name="borrar" value="Limpiar datos">
+                    <input class="button" type="button" value="Siguiente formulario" onclick="window.location.replace('actividad7b.html');">
+                    <input class="button" type="submit" value="Submitir">
+                    <input class="button" type="button" value="Salir" onclick="window.location.replace('..');">
+                </p>
+            </form></td></tr>
+        </table>
+    </body>
+</html>
