@@ -26,7 +26,6 @@ nav div {
 nav a {
     padding: 1mm;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: linear-gradient(0deg, rgb(201, 0, 0) 0%, rgb(255, 147, 147) 100%);
     text-decoration: none;
     margin-inline: 1mm;
     border-radius: 10%;
@@ -34,6 +33,10 @@ nav a {
     padding: 1.5mm;
     line-height: 10mm;
     color: white;
+}
+
+nav a:link {
+    background-image: linear-gradient(0deg, rgb(201, 0, 0) 0%, rgb(255, 147, 147) 100%);
 }
 
 nav a:hover {
