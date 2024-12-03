@@ -56,12 +56,18 @@ nav a:active {
 main {
     text-align: center;
     background-color: white;
-    margin-top: 2mm;
-    margin-bottom: 2mm;
+    margin: 2mm;
     padding: 2mm;
     border-radius: 5%;
+	width: 60%;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+	display: flex;
+	gap: 0;
+	border: none;
 }
 
 section {
@@ -75,14 +81,30 @@ body {
     padding-bottom: 20mm;
     background-color: rgb(255, 233, 233);
 }
-
-main iframe {
-    border-radius: 5%;
-}
-
 footer {
     text-align: center;
     font-weight: bolder;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 5%;
 }
+
+aside {
+	padding: 30px;
+	width: 40%;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 2mm;
+    padding: 2mm;
+    border-radius: 5%;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+
+aside section, main section {
+	text-align: center;
+}
+
+aside h2, main h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
