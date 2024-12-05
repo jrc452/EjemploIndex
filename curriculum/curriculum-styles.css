@@ -78,3 +78,13 @@ aside h2, main h2, footer h2 {
     font-variant: small-caps;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+footer .iframes {
+    display: flex;
+    padding: 5mm;
+    gap: 5mm;
+}
+
+footer iframe {
+    border: 0;
+}
