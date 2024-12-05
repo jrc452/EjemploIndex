@@ -27,15 +27,15 @@ main {
     margin: 2mm;
     padding: 2mm;
     border-radius: 5%;
-	width: 45%;
+    width: 45%;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
-	display: flex;
-	gap: 0;
-	border: none;
+    display: flex;
+    gap: 0;
+    border: none;
 }
 
 body {
@@ -59,9 +59,9 @@ footer {
 }
 
 aside {
-	padding: 20px;
-	width: 55%;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    width: 55%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
     margin: 2mm;
     padding: 2mm;
@@ -70,11 +70,11 @@ aside {
 }
 
 aside section, main section {
-	text-align: center;
+    text-align: center;
 }
 
 aside h2, main h2, footer h2 {
-	text-decoration: underline;
+    text-decoration: underline;
     font-variant: small-caps;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
