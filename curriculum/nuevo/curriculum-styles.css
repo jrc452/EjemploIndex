@@ -1,0 +1,177 @@
+.header {
+    text-align: center;
+    font-size: 60px;
+    border-radius: 25%;
+    background-image: linear-gradient(0deg, rgb(15, 187, 255) 0%, rgb(0, 74, 158) 100%);
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0px 0px 15px rgb(15, 187, 255);
+    display: flex;
+    align-items: center;
+}
+
+.header .image {
+    width: 25%;
+}
+
+.header img {
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px rgb(17, 0, 112);
+}
+
+.container {
+    display: flex;
+    gap: 0;
+    border: none;
+}
+
+.container .formacion {
+    text-align: left;
+    background-color: white;
+    margin: 2mm;
+    padding: 2mm;
+    border-radius: 5%;
+    width: 45%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .formacion h2 {
+    text-decoration: underline;
+}
+
+body {
+    width: 50em;
+    margin: auto;
+    background-color: black;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .container {
+    background-image: linear-gradient(0deg, rgb(15, 187, 255) 0%, rgb(0, 74, 158) 100%);
+    border-style: inset;
+    border-color: rgb(58, 150, 255);
+    border-width: 2mm;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    padding: 0.1mm;
+    margin-top: 5mm;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 0px 0px 15px rgb(15, 187, 255);
+    align-items: center;
+}
+
+footer .contact {
+    width: 50%;
+    height: auto;
+}
+
+footer .mapa {
+    width: 50%;
+    padding: 5mm;
+    gap: 5mm;
+}
+
+footer iframe {
+    box-shadow: 0px 0px 15px rgb(17, 0, 112);
+    border-style: inset;
+    border-color: rgb(58, 150, 255);
+    border-width: 1mm;
+    border-radius: 5%;
+    background-color: white;
+}
+
+footer a {
+    padding: 5mm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin-inline: 1mm;
+    border-radius: 10%;
+    margin: 2mm;
+    padding: 1.5mm;
+    line-height: 25mm;
+    color: white;
+    font-size: 12mm;
+}
+
+footer a:link {
+    background-image: linear-gradient(0deg, rgb(201, 0, 0) 0%, rgb(255, 147, 147) 100%);
+}
+
+footer a:visited {
+    background-image: linear-gradient(0deg, rgb(0, 80, 201) 0%, rgb(147, 242, 255) 100%);
+}
+
+footer a:hover {
+    background-image: linear-gradient(0deg, rgb(238, 18, 18) 0%, rgb(255, 199, 199) 100%);
+    box-shadow: 0px 0px 5px rgb(255, 156, 156);
+    text-shadow: 0px 0px 2.5px white;
+}
+
+footer a:active {
+    background-image: linear-gradient(0deg, rgb(155, 0, 0) 0%, rgb(243, 94, 94) 100%);
+}
+
+footer .copyright {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 1%;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+aside {
+    padding: 20px;
+    width: 55%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    margin: 2mm;
+    padding: 2mm;
+    border-radius: 5%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+aside section,
+main section {
+    text-align: center;
+}
+
+aside h2,
+main h2,
+footer h2 {
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bgvideo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -99;
+}
+
+.bgvideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    border-style: none;
+    pointer-events: none;
+}
