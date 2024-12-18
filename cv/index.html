@@ -8,19 +8,28 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
 </head>
 
-<body>
-	<div class="header">
+<body id="body">
+	<div class="header" id="header">
 		<div class="image">
 			<img width="110" height="110" alt="Foto" src="../curriculum/avatar.jpg">
 		</div>
 		<div width="100%" height="100%" class="name">
 			</p>Jairo Reyes Calvario</p>
+		</div>
+		<div width="100%" height="100%" class="buttons">
 			<a href="https://github.com/jrc452" target="_blank"><img class="logo-github" src="logo-github.svg"></a>
+			<button onclick="switchTheme()"><img class="mode-button" id="modeBtn" src="lightbult.svg"></button>
 		</div>
 	</div>
 	</header>
-	<div class="container">
-		<div class="lateral1">
+	<div class="container" id="container">
+		<div class="lateral1" id="lateral1">
+			<div class="contact">
+				<h2>Contacto</h2>
+				<p>685 80 10 41</p>
+				<p>jreycal452@g.educaand.es</p>
+			</div>
+			<hr>
 			<h2>Idiomas</h2>
 			<div>
 				<h3>Español</h3>
@@ -29,14 +38,8 @@
 				<p>Lengua extranjera<br>(B1 Preliminary)</p>
 				</p>
 			</div>
-			<hr>
-			<div class="contact">
-				<h2>Contacto</h2>
-				<p>685 80 10 41</p>
-				<p>jreycal452@g.educaand.es</p>
-			</div>
 		</div>
-		<div class="lateral2">
+		<div class="lateral2" id="lateral2">
 			<div>
 				<p>
 					<font style="font-weight: bolder">Nombre:</font> Jairo<br>
@@ -71,9 +74,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">
+	<div class="footer" id="footer">
 		<a href="..">Volver</a>
 	</div>
+	<script src="script.js"></script>
 </body>
 
 </html>

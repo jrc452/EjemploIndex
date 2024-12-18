@@ -2,6 +2,17 @@ body {
     max-width: 55em;
     margin: auto;
     background-image: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(234, 245, 255) 100%);
+    background-color: white;
+    background-repeat: space;
+    align-items: center;
+    padding: 1vw 1vw 1vw 1vw;
+}
+
+.body-dark {
+    max-width: 55em;
+    margin: auto;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(33, 35, 36) 100%);
+    background-color: black;
     background-repeat: space;
     align-items: center;
     padding: 1vw 1vw 1vw 1vw;
@@ -20,20 +31,54 @@ body {
     padding-bottom: 8mm;
 }
 
-.logo-github {
+.header-dark {
+    text-align: center;
+    font-size: 45px;
+    border-radius: 25px 25px 0px 0px;
+    background-image: linear-gradient(0deg, rgb(121, 0, 0) 0%, rgb(41, 3, 0) 100%);
+    color: white;
+    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+    font-family: Georgia;
+    align-items: center;
+    padding-top: 8mm;
+    padding-bottom: 8mm;
+}
+
+.header button {
+    background-color: unset;
+    border-style: none;
+
+}
+
+.logo-github,
+.mode-button {
     width: 10mm;
+    height: 10mm;
     background-color: white;
     padding: 1mm;
+    margin: 1mm;
     border-radius: 100%;
     box-shadow: 0 0 4px white;
     filter: saturate(0);
 }
 
-.logo-github:hover {
+.mode-button-dark {
+    width: 10mm;
+    height: 10mm;
+    background-color: rgb(0, 0, 0);
+    padding: 1mm;
+    border-radius: 100%;
+    box-shadow: 0 0 4px white;
+}
+
+
+.logo-github:hover,
+.mode-button:hover {
     animation: 1s forwards githubhover;
 }
 
-.logo-github:not(:hover) {
+.logo-github:not(:hover),
+.mode-button:not(:hover) {
     animation: 1s forwards githubout;
 }
 
@@ -63,7 +108,8 @@ body {
 }
 
 .header .name {
-    text-align: center;
+    font-size: 8mm;
+    text-align: left;
     align-items: center;
     width: 75%;
 }
@@ -85,6 +131,13 @@ body {
     font-family: Verdana;
     align-items: center;
     background-image: linear-gradient(0deg, rgb(213, 235, 255) 0%, rgb(240, 246, 248) 100%);
+}
+
+.container-dark {
+    font-family: Verdana;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgb(48, 53, 58) 0%, rgb(18, 18, 19) 100%);
+    color: white;
 }
 
 @media only screen and (min-width: 700px) {
@@ -118,19 +171,31 @@ body {
 }
 
 .container .lateral1 {
-    text-align: center;
+    text-align: left;
     padding: 10mm;
 }
 
 .container .lateral1 h2,
 .container .lateral2 h2 {
     background-image: linear-gradient(0deg, rgb(255, 15, 15) 0%, rgb(196, 13, 0) 100%);
-    padding: 2%;
+    padding: 1vw;
     border-radius: 25px 25px;
     color: white;
     font-family: Arial;
     text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-align: left;
+    margin: auto;
+}
+
+.container .lateral1-dark h2,
+.container .lateral2-dark h2 {
+    background-image: linear-gradient(0deg, rgb(121, 0, 0) 0%, rgb(41, 3, 0) 100%);
+    padding: 1vw;
+    border-radius: 25px 25px;
+    color: white;
+    font-family: Arial;
+    text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.5);
+    text-align: left;
     margin: auto;
 }
 
@@ -152,6 +217,12 @@ body {
 .footer {
     text-align: center;
     background-image: linear-gradient(0deg, rgb(255, 15, 15) 0%, rgb(196, 13, 0) 100%);
+    border-radius: 0 0 25px 25px;
+}
+
+.footer-dark {
+    text-align: center;
+    background-image: linear-gradient(0deg, rgb(121, 0, 0) 0%, rgb(41, 3, 0) 100%);
     border-radius: 0 0 25px 25px;
 }
 
@@ -211,12 +282,14 @@ body {
     0% {
         filter: saturate(0);
         width: 10mm;
+        height: 10mm;
         box-shadow: 0 0 4px white;
     }
 
     100% {
         filter: saturate(100%);
         width: 12mm;
+        height: 12mm;
         box-shadow: 0px 0px 30px white;
     }
 }
@@ -225,12 +298,14 @@ body {
     0% {
         filter: saturate(100%);
         width: 12mm;
+        height: 12mm;
         box-shadow: 0px 0px 30px white;
     }
 
     100% {
         filter: saturate(0);
         width: 10mm;
+        height: 10mm;
         box-shadow: 0 0 4px white;
     }
 }
