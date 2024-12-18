@@ -11,7 +11,7 @@ body {
 .body-dark {
     max-width: 55em;
     margin: auto;
-    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(33, 35, 36) 100%);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(25, 27, 27) 100%);
     background-color: black;
     background-repeat: space;
     align-items: center;
@@ -136,7 +136,7 @@ body {
 .container-dark {
     font-family: Verdana;
     align-items: center;
-    background-image: linear-gradient(0deg, rgb(48, 53, 58) 0%, rgb(18, 18, 19) 100%);
+    background-image: linear-gradient(0deg, rgb(25, 27, 29) 0%, rgb(13, 13, 14) 100%);
     color: white;
 }
 
