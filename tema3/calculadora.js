@@ -1,12 +1,9 @@
+let operation = [];
 const calculator = document.getElementById('calculator');
 const screen = document.getElementById('screen');
 const currentOperator = document.getElementById('currentOperator');
-
-calculator.addEventListener('click', addNum);
-
-let operation = [];
-
-function addNum(e) {
+calculator.addEventListener('click', calculate);
+function calculate(e) {
     if (e.target.getAttribute('type') === 'button') {
         if (e.target.className != 'operation')
             screen.value += e.target.innerText;
