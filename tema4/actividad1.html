@@ -9,11 +9,11 @@
     <script>
         /* APARTADO 1 */
         document.write("*APARTADO 1*<br/>");
-        vector_numeros = new Array(100);
+        vector_numeros = new Array();
 
         document.write("<br/>vector_numeros:<br/>")
-        for (let i = 0; i < vector_numeros.length; i++) {
-            vector_numeros[i] = Math.floor(Math.random() * 50) + 1;
+        for (let i = 0; i < 100; i++) {
+            vector_numeros[i] = Math.ceil(Math.random() * 50);
             document.write("[" + i + "]: <font style=font-weight:bold>" + vector_numeros[i] + "</font>");
             if ((i + 1) % 10 == 0)
                 document.write("<br/>");
@@ -34,12 +34,12 @@
         document.write("*APARTADO 2*<br/>");
 
         document.write("<br/>array_numeros: ")
-        let numero = Math.floor(Math.random() * 100) + 1;
+        let numero = Math.ceil(Math.random() * 100);
         array_numeros = new Array();
         for (let i = 0; numero != 0; i++) {
             array_numeros[i] = numero;
             document.write("<font style=font-weight:bold>" + array_numeros[i] + "</font>, ");
-            numero = Math.floor(Math.random() * 100);
+            numero = Math.round(Math.random() * 100);
         }
 
         let pares = 0;
