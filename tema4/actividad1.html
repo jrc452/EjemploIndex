@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        /* APARTADO 1 */
+        document.write("*APARTADO 1*<br/>");
+        vector_numeros = new Array();
+
+        document.write("<br/>vector_numeros:<br/>")
+        for (let i = 0; i < 100; i++) {
+            vector_numeros[i] = Math.floor(Math.random() * 50) + 1;
+            document.write("[" + i + "]: <font style=font-weight:bold>" + vector_numeros[i] + "</font>");
+            if ((i + 1) % 10 == 0)
+                document.write("<br/>");
+            else
+                document.write("; ");
+        }
+
+        document.write("<br/><br/>");
+        let suma = 0;
+        for (let i = 0; i < vector_numeros.length; i++)
+            suma += vector_numeros[i];
+
+        document.write("Sumatorio de todos los números: <font style=font-weight:bold>" + suma + "</font>");
+
+        document.write("<br/><br/><br/><br/>");
+
+        /* APARTADO 2 */
+        document.write("*APARTADO 2*<br/>");
+
+        document.write("<br/>array_numeros: ")
+        let numero = Math.floor(Math.random() * 100) + 1;
+        array_numeros = new Array();
+        for (let i = 0; numero != 0; i++) {
+            array_numeros[i] = numero;
+            document.write("<font style=font-weight:bold>" + array_numeros[i] + "</font>, ");
+            numero = Math.floor(Math.random() * 100);
+        }
+
+        let pares = 0;
+        let impares = 0;
+
+        document.write("<br/>");
+        for (let r = 0; r < 2; r++) {
+            if (r == 0)
+                document.write("<br/>Números pares: ");
+            else
+                document.write("<br/><br/>Números impares: ");
+            for (let i = 0; i < array_numeros.length; i++) {
+                if (r == 0 & array_numeros[i] % 2 == 0) {
+                    document.write("<font style=font-weight:bold>" + array_numeros[i] + "</font>, ");
+                    pares++;
+                } else if (r != 0 & array_numeros[i] % 2 != 0) {
+                    document.write("<font style=font-weight:bold>" + array_numeros[i] + "</font>, ");
+                    impares++;
+                }
+            }
+        }
+        if (array_numeros != null) {
+            document.write("<br/><br/>");
+            document.write("<font style=font-weight:bold>" + pares + "</font> pares");
+            document.write("<br/>");
+            document.write("<font style=font-weight:bold>" + impares + "</font> impares");
+        }
+    </script>
+</body>
+
+</html>
