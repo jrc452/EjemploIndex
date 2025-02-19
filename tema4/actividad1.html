@@ -9,10 +9,10 @@
     <script>
         /* APARTADO 1 */
         document.write("*APARTADO 1*<br/>");
-        vector_numeros = new Array();
+        vector_numeros = new Array(100);
 
         document.write("<br/>vector_numeros:<br/>")
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < vector_numeros.length; i++) {
             vector_numeros[i] = Math.floor(Math.random() * 50) + 1;
             document.write("[" + i + "]: <font style=font-weight:bold>" + vector_numeros[i] + "</font>");
             if ((i + 1) % 10 == 0)
