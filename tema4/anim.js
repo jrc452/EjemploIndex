@@ -24,7 +24,8 @@ function circleAnim() {
     circle.animate({ left: '100px' }, 1000);
     circle.animate({
         left: '200px',
-        right: '200px'
+        right: '200px',
+        'border-radius': '100%'
     }, 1000);
     circle.animate({
         width: '+=25px',
@@ -46,8 +47,7 @@ function circleAnim() {
         height: '100px',
         width: '100px',
         left: '10px',
-        top: '29px',
-        'border-radius': '100%'
+        top: '29px'
     }, 1000)
 };
 
@@ -67,7 +67,11 @@ function boxAnim() {
     box.animate({ top: '29px' }, 1000);
     box.animate({ left: '50px' }, 1000);
     box.animate({ left: '500px' }, 1000);
-    box.animate({ left: '250px', top: '300px' }, 1000);
+    box.animate({
+        left: '250px',
+        top: '300px',
+        'border-radius': '0%'
+    }, 1000);
     box.animate({
         height: '+=100px'
     }, 750);
@@ -82,7 +86,6 @@ function boxAnim() {
         height: '100px',
         width: '100px',
         left: '10px',
-        top: '150px',
-        'border-radius': '0%'
+        top: '150px'
     }, 2000)
 }
