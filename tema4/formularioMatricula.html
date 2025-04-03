@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Matricula</title>
+    <link rel="stylesheet" href="formularioMatricula.css">
+    <script src="formularioMatricula.js"></script>
+</head>
+
+<body>
+
+    <h1>Formulario de Matriculación</h1>
+
+    <form id="formulario">
+        <!-- Información del Alumno -->
+        <label for="horas">Horas semanales: </label>
+        <input type="number" id="horas" min="1" required><br><br>
+
+        <label for="alumnoAntiguo">¿Eres antiguo alumno?</label>
+        <input type="checkbox" id="alumnoAntiguo"><br><br>
+
+        <label for="beca">¿Tienes beca?</label>
+        <input type="checkbox" id="beca"><br><br>
+
+        <!-- Materias -->
+        <label for="matematicas1">Matemáticas I</label>
+        <input type="checkbox" id="matematicas1"><br>
+
+        <label for="historia">Historia</label>
+        <input type="checkbox" id="historia"><br>
+
+        <label for="matematicas2">Matemáticas II</label>
+        <input type="checkbox" id="matematicas2"><br>
+
+        <label for="fisica">Física</label>
+        <input type="checkbox" id="fisica"><br><br>
+
+        <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+    </form>
+
+    <div id="mensajeError" class="error"></div>
+
+    <div id="resultado">
+        <div id="precioFinal" class="precio"></div>
+        <div id="precioConBeca" class="precio"></div>
+    </div>
+</body>
+
+</html>

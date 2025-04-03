@@ -1,0 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-adventor');
+
+* {
+    font-family: 'TeXGyreAdventor', sans-serif;
+    text-align: center;
+}
+
+.precio {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
