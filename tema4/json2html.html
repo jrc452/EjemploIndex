@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            text-align: justify;
+            white-space: nowrap;
+            vertical-align: inherit;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        th {
+            padding: 1px 5px;
+        }
+
+        table tr:first-child {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const txt = '{"employees": [{"employee": "Employee 1","name": "Juan Pérez",\
+        "age": 35,"position": "Senior Developer","department": "Technology","salary": 75000,\
+        "location": "Madrid, Spain"},{"employee": "Employee 2","name": "María Rodriguez","age": 28,\
+        "position": "Graphic Designer","department": "Design","salary": 60000,"location": "Paris, France"},\
+        {"employee": "Employee 3","name": "Carlos Gómez","age": 40,"position": "Project Manager","department":\
+        "Project Management","salary": 90000,"location": "Berlin, Germany"}]}';
+        const obj = JSON.parse(txt);
+
+        document.write(
+            "<table>\
+                <tr'>\
+                    <th>Employee</th>\
+                    <th>Name</th>\
+                    <th>Age</th>\
+                    <th>Position</th>\
+                    <th>Department</th>\
+                    <th>Salary</th>\
+                    <th>Location</th>\
+                </tr>"
+        );
+        for (i = 0; i < obj.employees.length; i++) {
+            document.write(
+                "<tr>\
+                    <th>"+ obj.employees[i].employee + "</th>\
+                    <th>"+ obj.employees[i].name + "</th>\
+                    <th>"+ obj.employees[i].age + "</th>\
+                    <th>"+ obj.employees[i].position + "</th>\
+                    <th>"+ obj.employees[i].department + "</th>\
+                    <th>"+ obj.employees[i].salary + "</th>\
+                    <th>"+ obj.employees[i].location + "</th>\
+                </tr>"
+            )
+        }
+        document.write("</table>");
+    </script>
+
+</body>
+
+</html>
