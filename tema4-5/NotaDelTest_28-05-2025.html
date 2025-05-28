@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NotaDelTest_28-05-2025.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Nota del Examen</h1>
+
+        <label for="fallos">¿Cuántas preguntas fallaste?</label>
+        <input type="number" id="fallos" min="0" max="27">
+
+        <label for="penalizacion">Penalización por cada fallo:</label>
+        <select id="penalizacion">
+            <option value="0">Sin resta de fallos</option>
+            <option value="0.1">-0.1 (Entregado en 1 h)</option>
+            <option value="0.2">-0.2 (Entregado en 12 h)</option>
+            <option value="0.3">-0.3 (Sin entrega)</option>
+        </select>
+
+        <button onclick="calcularNota()">Calcular Nota</button>
+
+        <div id="resultado"></div>
+
+        <div class="footer">Nota basada en 27 preguntas = 10 puntos<!-- | Aciertos = 27 - fallos--></div>
+
+        <script src="NotaDelTest_28-05-2025.js"></script>
+    </div>
+</body>
+
+</html>
